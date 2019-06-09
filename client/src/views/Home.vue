@@ -1,9 +1,11 @@
 <template>
-  <div class="home">
-    <router-link to="/register">REGISTER</router-link>
+  <div>
+
   </div>
 </template>
 
 <script>
-export default {}
+
+export default {
+}
 </script>

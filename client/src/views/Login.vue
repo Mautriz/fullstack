@@ -8,7 +8,7 @@
           <input type="password" name="password" placeholder="password" v-model="password">
           <br>
           <div v-html="error" class="error"/>
-          <v-btn @click="register"> Register </v-btn>
+          <v-btn @click="login"> Login </v-btn>
         </div>
     </div>
 
@@ -25,9 +25,9 @@ export default {
     }
   },
   methods: {
-    async register () {
+    async login () {
       try {
-        await AuthenticationService.register({
+        await AuthenticationService.login({
           email: this.email,
           password: this.password
         })
