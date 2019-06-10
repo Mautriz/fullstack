@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <v-app class="grey lighten-4">
     <Header fixed ></Header>
-    <v-content>
+    <v-content fluid>
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -22,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style>
+* {
+  box-sizing: border-box
+}
+</style>
